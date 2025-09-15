@@ -1,0 +1,6 @@
+# Node modules
+node_modules/
+
+
+# Optional: lock files (if you use only one package manager)
+package-lock.json
