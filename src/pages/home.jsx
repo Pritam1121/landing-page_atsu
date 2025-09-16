@@ -15,9 +15,8 @@ import Review from "../components/Review";
 const home = () => {
     return (
         <div className="w-full h-100vh relative bg-[#000A1F]">
-            <div className="w-full h-96 absolute inset-0 bg-[url('/images/Grid.png')] bg-cover bg-center opacity-50"></div>
-            <div
-                className="w-100% h-100 absolute inset-0 bg-[url('/images/ImageBackground.png')] bg-cover bg-center opacity-30 z-1"></div>
+            <div className="w-full h-96 absolute inset-0 bg-[url('/images/Grid.png')] bg-cover bg-center opacity-100"></div>
+
             {/* 1st section */}
             <div className="max-w-6xl mx-auto pt-20 px-4 sm:px-6 lg:px-8 z-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -117,8 +116,8 @@ const home = () => {
                 <div className="mb-16">
                     <BusinessSection />
                 </div>
-                  <div className="mb-16">
-                    {/* <DevlopmentCard /> */}
+                <div className="mb-16">
+                    <DevlopmentCard />
                 </div>
                 <div className="mb-16">
                     <ProjectCard />
