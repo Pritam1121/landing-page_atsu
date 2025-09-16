@@ -30,3 +30,9 @@ To run the project locally, follow the installation steps above. The landing pag
 2.Tailwind
 3.DaisyUI
 
+## View 
+
+![Alt text](3d_Image.png "This is the image title")
+
+## Live URL
+[Click here](https://atsulandingpage.netlify.app/)
