@@ -12,9 +12,9 @@ This is a landing page for the ATSU (Addis Towns and Subcities) project. It is b
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/atsu-landing-page.git`
+1. Clone the repository: `https://github.com/Pritam1121/landing-page_atsu.git`
 2. Install dependencies: `npm install`
-3. Start the development server: `npm start`
+3. Start the development server: `npm run dev`
 
 ## Usage
 
