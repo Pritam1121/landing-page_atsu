@@ -1,22 +1,22 @@
 import React from 'react';
 import featureData from '../data/Features_Data';
+
 const FeatureApp = () => {
   return (
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-full sm:max-w-3xl mx-auto">
       {featureData.map((value, index) => (
-        <div key={index} className="flex items-center justify-center">
-          <div className="grid grid-cols-2 items-center w-full">
-            <div>
-              <img
-                src={value.image}
-                alt={value.title}
-                className="p-0 w-20px h-auto"
-              />
-            </div>
-            <div>
-              <h2 className="text-white w-60">{value.title}</h2>
-              <p className="text-gray-500 w-60">{value.description}</p>
-            </div>
+        <div
+          key={index}
+          className="flex items-start w-full max-w-[280px]"
+        >
+          <img
+            src={value.image}
+            alt={value.title}
+            className="w-16 sm:w-20 h-auto flex-shrink-0 pr-4 sm:pr-5"
+          />
+          <div>
+            <h2 className="text-white font-semibold text-base sm:text-lg">{value.title}</h2>
+            <p className="text-gray-400 text-xs sm:text-sm mt-1">{value.description}</p>
           </div>
         </div>
       ))}
@@ -26,39 +26,3 @@ const FeatureApp = () => {
 
 export default FeatureApp;
 
-
-
-
-
-
-
-
-
-// import React from 'react';
-// import featureData from '../data/Features_Data';
-// const FeatureApp = () => {
-//   return (
-//     <div className="grid grid-cols-2 gap-4">
-//       {featureData.map((val, index) => (
-//         <div key={index} className="flex items-center justify-center">
-//           <div className='flex'>
-//             <img
-//               src={val.image}
-//               alt={val.title}
-//               className="p-0 w-20px h-auto"
-//             />
-//             <h2 className="text-white w-60">{val.title}</h2>
-//             {/* <h2 className="text-white w-60">{val.description}</h2> */}
-
-//           </div>
-//           {/* <div>
-//             <h2 className="text-white w-60">{val.title}</h2>
-//             <p className="text-gray-500 w-60">{val.description}</p>
-//           </div> */}
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
-
-// export default FeatureApp;

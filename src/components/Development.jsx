@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Check, Menu } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const DevlopmentCard = () => {
   return (
@@ -107,3 +107,6 @@ const DevlopmentCard = () => {
 };
 
 export default DevlopmentCard;
+
+
+
