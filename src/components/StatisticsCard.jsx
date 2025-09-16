@@ -13,7 +13,6 @@ const InfoCardList = () => {
             <div className="absolute top-0 left-1/2 w-[90%] h-full bg-gray-800 
             rounded-3xl -translate-x-1/2 z-0 origin-bottom rotate-[-8deg] transition-all 
             duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:rotate-[5deg]
-            //  group-hover:bg-gray-400
             group-hover:bg-gradient-to-r group-hover:from-[#E100FF] group-hover:to-[#7F00FF]
             "></div>
 

@@ -1,30 +1,34 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-const PlayButton = () => {
+function CircularVideoToggle() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const toggleVideo = () => {
-    setIsPlaying(true);
+    setIsPlaying(prev => !prev);
   };
 
   return (
     <div
-      className="relative flex items-center justify-center bg-black overflow-hidden rounded-xl"
-      style={{ width: '300px', height: '200px' }}
+      className="relative flex items-center justify-center bg-black overflow-hidden"
+      style={{ width: '300px', height: '300px', borderRadius: '50%' }}
     >
-      {isPlaying && (
-        <iframe
-          className="absolute inset-0 rounded-md z-0 muted"
-          style={{ width: '300px', height: '200px' }}
-          src="https://www.youtube.com/embed/gvuQY6GNigc?autoplay=1&mute=1"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="autoplay; encrypted-media"
-          allowFullScreen
-        ></iframe>
-      )}
-
-      {!isPlaying && (
+      {isPlaying ? (
+        <video
+          className="absolute inset-0 z-0 cursor-pointer"
+          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          autoPlay
+          loop
+          muted
+          playsInline
+          onClick={toggleVideo}
+        >
+          <source
+            src="https://media.istockphoto.com/id/1469875556/nl/video/4k-abstract-lines-background-loopable.mp4?s=mp4-640x640-is&k=20&c=A3BJ3DgcTPQfolWfj2BYRm0Xrw0ho3QZM8c0XvEJQBo="
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      ) : (
         <button
           onClick={toggleVideo}
           className="relative z-10 w-32 h-32 rounded-full bg-white shadow-xl flex items-center justify-center hover:scale-105 transition-transform duration-300"
@@ -43,6 +47,6 @@ const PlayButton = () => {
       )}
     </div>
   );
-};
+}
 
-export default PlayButton;
+export default CircularVideoToggle;
