@@ -23,7 +23,7 @@ const ContactForm = () => {
     },
     validationSchema,
     onSubmit: (values, { resetForm }) => {
-      alert('Thank you for submitting the form');
+      alert('Thank you for submitting, I will connect shortly.');
     
       resetForm();
     },
@@ -82,7 +82,7 @@ const ContactForm = () => {
         type="submit"
         className="bg-gradient-to-r from-[#E100FF] to-[#7F00FF] text-white font-semibold py-3 px-6 rounded shadow group-hover:from-pink-400 group-hover:to-blue-300 transition"
   >
-        Send Message
+        Submit
       </button>
     </form>
   );
